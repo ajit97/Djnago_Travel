@@ -1,0 +1,15 @@
+.col{
+  margin-bottom: 30px
+}
+.offer{
+  position: absolute;
+  background-color: blue;
+  width: 100px;
+  padding: 5px;
+  margin: 10px;
+  text-align: center;
+  right: 0;
+  color: white;
+  font-size: 20px;
+  line-height: center;
+}

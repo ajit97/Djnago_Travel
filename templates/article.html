@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="{% static '/css/styling.css' %} ">
+</head>
+<body>
+  {% if obj is not None%}
+  <h2 class="display-2 text-center">{{obj.name}}</h2>
+  <div class="container">
+    <p class="text-justify">{{obj.status}}</p>
+  </div>
+  {%else%}
+  <h2 class="display-2 text-center">Not Found</h2>
+  {% endif %}
+</body>
+</html>
